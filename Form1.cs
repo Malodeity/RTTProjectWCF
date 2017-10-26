@@ -47,7 +47,7 @@ namespace RTTProjectWCF
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Employee p = new Employee();
-            p.surname = txtName.Text;
+            p.name = txtName.Text;
             p.surname = txtSurname.Text;
             p.email = txtEmail.Text;
             p.resAddress = txtResAddress.Text;
@@ -114,8 +114,7 @@ namespace RTTProjectWCF
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Service1Client service = new Service1Client();
-            dgvEmployees.DataSource = service.GetEmployee();
+            
         }
     }
 }
