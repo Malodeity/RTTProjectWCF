@@ -109,12 +109,71 @@ namespace RTTProjectWCF
             }
             writer.Close();
             MessageBox.Show("Data was successfully exported");
+            txtName.Clear();
+            txtSurname.Clear();
+            txtEmail.Clear();
+            txtResAddress.Clear();
+            txtWoAddress.Clear();
+            txtPosAddress.Clear();
+            txtCellNum.Clear();
+            txtWorkNum.Clear();
 
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            Employee p = new Employee()
+            {
+
+                name = Convert.ToString(txtName.Text),
+                surname = Convert.ToString(txtSurname.Text),
+                email = Convert.ToString(txtEmail.Text),
+                resAddress = Convert.ToString(txtResAddress.Text),
+                workAddress = Convert.ToString(txtWoAddress.Text),
+                postAddress = Convert.ToString(txtPosAddress.Text),
+                cellNum = Convert.ToString(txtCellNum.Text),
+                workNum = Convert.ToString(txtWorkNum.Text)
+
+            };
+            Service1Client service = new Service1Client();
+
+            if(service.UpdateEmployee(p)==1)
+            {
+                MessageBox.Show("Employee Was Successfully Updated");
+                txtName.Clear();
+                txtSurname.Clear();
+                txtEmail.Clear();
+                txtResAddress.Clear();
+                txtWoAddress.Clear();
+                txtPosAddress.Clear();
+                txtCellNum.Clear();
+                txtWorkNum.Clear();
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+            Employee p = new Employee()
+            {
+                empId = Convert.ToInt32(txtEmpId.Text)
+
+            };
+
+            Service1Client service = new Service1Client();
+            
+              if(service.DeleteEmployee(p) ==1)
+            {
+                MessageBox.Show("Employee Has been deleted");
+                txtEmpId.Clear();
+            }
+
+
         }
     }
 }

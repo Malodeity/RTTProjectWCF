@@ -38,6 +38,18 @@ namespace RTTProjectWCF.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetEmployee", ReplyAction="http://tempuri.org/IService1/GetEmployeeResponse")]
         System.Threading.Tasks.Task<RTTProjectWCF.Employee[]> GetEmployeeAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateEmployee", ReplyAction="http://tempuri.org/IService1/UpdateEmployeeResponse")]
+        int UpdateEmployee(RTTProjectWCF.Employee e);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateEmployee", ReplyAction="http://tempuri.org/IService1/UpdateEmployeeResponse")]
+        System.Threading.Tasks.Task<int> UpdateEmployeeAsync(RTTProjectWCF.Employee e);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/DeleteEmployee", ReplyAction="http://tempuri.org/IService1/DeleteEmployeeResponse")]
+        int DeleteEmployee(RTTProjectWCF.Employee e);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/DeleteEmployee", ReplyAction="http://tempuri.org/IService1/DeleteEmployeeResponse")]
+        System.Threading.Tasks.Task<int> DeleteEmployeeAsync(RTTProjectWCF.Employee e);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -97,6 +109,22 @@ namespace RTTProjectWCF.ServiceReference1 {
         
         public System.Threading.Tasks.Task<RTTProjectWCF.Employee[]> GetEmployeeAsync() {
             return base.Channel.GetEmployeeAsync();
+        }
+        
+        public int UpdateEmployee(RTTProjectWCF.Employee e) {
+            return base.Channel.UpdateEmployee(e);
+        }
+        
+        public System.Threading.Tasks.Task<int> UpdateEmployeeAsync(RTTProjectWCF.Employee e) {
+            return base.Channel.UpdateEmployeeAsync(e);
+        }
+        
+        public int DeleteEmployee(RTTProjectWCF.Employee e) {
+            return base.Channel.DeleteEmployee(e);
+        }
+        
+        public System.Threading.Tasks.Task<int> DeleteEmployeeAsync(RTTProjectWCF.Employee e) {
+            return base.Channel.DeleteEmployeeAsync(e);
         }
     }
 }
