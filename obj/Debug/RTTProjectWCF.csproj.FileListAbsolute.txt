@@ -1,0 +1,11 @@
+c:\users\user\documents\visual studio 2015\Projects\RTTProjectWCF\RTTProjectWCF\bin\Debug\RTTProjectWCF.exe.config
+c:\users\user\documents\visual studio 2015\Projects\RTTProjectWCF\RTTProjectWCF\bin\Debug\RTTProjectWCF.exe
+c:\users\user\documents\visual studio 2015\Projects\RTTProjectWCF\RTTProjectWCF\bin\Debug\RTTProjectWCF.pdb
+c:\users\user\documents\visual studio 2015\Projects\RTTProjectWCF\RTTProjectWCF\obj\Debug\RTTProjectWCF.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\RTTProjectWCF\RTTProjectWCF\obj\Debug\RTTProjectWCF.Form1.resources
+c:\users\user\documents\visual studio 2015\Projects\RTTProjectWCF\RTTProjectWCF\obj\Debug\RTTProjectWCF.Properties.Resources.resources
+c:\users\user\documents\visual studio 2015\Projects\RTTProjectWCF\RTTProjectWCF\obj\Debug\RTTProjectWCF.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2015\Projects\RTTProjectWCF\RTTProjectWCF\obj\Debug\RTTProjectWCF.exe
+c:\users\user\documents\visual studio 2015\Projects\RTTProjectWCF\RTTProjectWCF\obj\Debug\RTTProjectWCF.pdb
+c:\users\user\documents\visual studio 2015\Projects\RTTProjectWCF\RTTProjectWCF\bin\Debug\WcfRTT.dll
+c:\users\user\documents\visual studio 2015\Projects\RTTProjectWCF\RTTProjectWCF\bin\Debug\WcfRTT.pdb
